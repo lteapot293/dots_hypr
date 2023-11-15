@@ -1,0 +1,45 @@
+#!/bin/bash
+
+
+
+export XDG_CURRENT_DESKTOP=Hyprland
+export XDG_SESSION_TYPE=wayland
+export XDG_SESSION_DESKTOP=Hyprland
+
+# Config folder
+export XDG_CONFIG_HOME="${HOME}/.config"
+
+# User binaries folder
+export PATH="${HOME}/.local/bin:${PATH}"
+
+#export QT_QPA_PLATFORM="wayland;xcb"
+export QT_QPA_PLATFORM="wayland"
+export QT_QPA_PLATFORMTHEME="qt5ct"
+export QT_WAYLAND_DISABLE_WINDOWDECORATION="1"
+
+export SDL_VIDEODRIVER=wayland
+export _JAVA_AWT_WM_NONEREPARENTING=1
+
+# Clutter
+export CLUTTER_BACKEND="wayland"
+
+# SDL2
+export SDL_VIDEODRIVER="wayland"
+
+# Elementary/EFL
+export ELM_DISPLAY="wl"
+export ECORE_EVAS_ENGINE="wayland"
+export ELM_ENGINE="wayland"
+export ELM_ACCEL="opengl"
+
+# Winit
+export WINIT_UNIX_BACKEND="wayland"
+
+# Java
+export _JAVA_AWT_WM_NONREPARENTING="1"
+
+#XCURSOR_THEME=Catppuccin-Mocha-Dark-Cursors
+export XCURSOR_SIZE=16
+export GTK_THEME=Dracula
+
+exec Hyprland
