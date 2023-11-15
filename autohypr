@@ -18,6 +18,7 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 export QT_WAYLAND_DISABLE_WINDOWDECORATION="1"
 export QT_SCALE_FACTOR=1
 export GDK_SCALE=2
+export XCURSOR_SIZE=32
 
 export SDL_VIDEODRIVER=wayland
 export _JAVA_AWT_WM_NONEREPARENTING=1
@@ -41,7 +42,6 @@ export WINIT_UNIX_BACKEND="wayland"
 export _JAVA_AWT_WM_NONREPARENTING="1"
 
 #XCURSOR_THEME=Catppuccin-Mocha-Dark-Cursors
-export XCURSOR_SIZE=16
 export GTK_THEME=Dracula
 
 exec Hyprland
