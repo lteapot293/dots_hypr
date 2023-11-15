@@ -1,6 +1,7 @@
 {
     "position": "top",
     "layer": "top",
+    "output": "eDP-1",
     "height": 16,
     "margin-top": 0,
     "margin-bottom": 0,
