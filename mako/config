@@ -1,0 +1,70 @@
+# GLOBAL
+#sort=+time
+layer=overlay
+
+# STYLE
+font=Noto Sans Regular 11
+width=220
+margin=5,18,0
+padding=7
+border-size=1
+border-radius=10
+progress-color=#ffffff
+max-icon-size=36
+icon-path=/usr/share/icons/WhiteSur-dark:/usr/share/icons/WhiteSur:/usr/share/icons/Adwaita:/usr/share/icons/hicolor
+icon-location=right
+format=<b>%s</b>\n%b
+text-alignment=left
+anchor=top-right
+default-timeout=100
+ignore-timeout=1
+
+# CRITERA
+## urgency
+[urgency=low]
+default-timeout=2500
+background-color=#000000
+border-color=#2D2D2D
+text-color=#ffffff
+
+[urgency=normal]
+default-timeout=8000
+background-color=#161616
+border-color=#565656
+text-color=#ffffff
+on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message-new-instant.oga
+
+[urgency=critical]
+default-timeout=0
+background-color=#C20618
+border-color=#D70015
+text-color=#ffffff
+on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/dialog-warning.oga
+
+## app-name
+[app-name=Pomodoro]
+anchor=top-center
+format=%s\n%b
+group-by=app-name
+default-timeout=1000
+on-notify=exec echo hello
+
+[app-name=Geary]
+format=Geary\n%s: %b
+
+[app-name=control]
+format=<b>%s</b>\n%b
+group-by=summary
+anchor=top-center
+text-alignment=center
+
+[app-name=batsignal]
+format=<b>%s</b>\n%b
+group-by=app-name
+
+[app-name=udiskie]
+default-timeout=2500
+
+## body
+[body=""]
+format=%s\n%b
