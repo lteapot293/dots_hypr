@@ -9,7 +9,7 @@
     "margin-right": 0,
     "modules-left": ["hyprland/workspaces", "custom/playerctl", "custom/playerlabel"],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "pulseaudio", "backlight"],
+    "modules-right": ["pulseaudio", "backlight", "tray"],
     // Modules configuration
 	"clock": {
 		"format": " {:%H:%M}",
