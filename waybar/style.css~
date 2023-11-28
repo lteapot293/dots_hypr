@@ -188,8 +188,6 @@ window#waybar {
 }
 
 #language {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px; 
     color: #20B2AA
 }
 
